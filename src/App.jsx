@@ -1,6 +1,10 @@
 import { useState } from 'react';
 
-import { Navbar } from './js/components/navbar';
+import { Navbar } from './js/components/navbar.jsx';
+import { Footer } from './js/components/footer.jsx';
+import { Home } from './js/views/home.jsx';
+import { Work } from './js/views/work.jsx';
+import { About } from './js/views/about.jsx';
 import './styles/App.css';
 
 
@@ -10,8 +14,14 @@ function App() {
   return (
     <>
       <Navbar />
-      <h1 className="text-3xl font-bold text-center">Carina Gaspar</h1>
-      <button class="btn btn-secondary">Button</button>
+      <div>
+        <h1 className="text-3xl font-bold text-center">Carina Gaspar</h1>
+        <Home />
+        <Work />
+        <About />
+      </div>
+        
+      <Footer />
     </>
   )
 }
